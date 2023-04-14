@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <title>Memória játék</title>
+</head>
+<body>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav dark">
+                <a class="navbar dark" href="index.html"><img class="kep" src="./img/hatter.png" alt="csgo gamble">Best Gamble site</a>
+                <input type="button" value="1 player" id="p1" onclick="p1()">
+                <input type="button" value="2 player" id="p2">
+                <input type="button" value="inventory" onclick="inventory()">
+                <input type="button" value="History">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Deposit
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container">
+
+                          <form action="">
+                      
+                              <div class="row">
+                      
+                                  <div class="col">
+                                    
+                                    <h3 class="title">Kötelező adatok:</h3>
+                      
+                                      <div class="inputBox">
+                                          <span>Teljes név:</span>
+                                          <input type="text" placeholder="john deo">
+                                      </div>
+                                      <div class="inputBox">
+                                          <span>E-mail:</span>
+                                          <input type="email" placeholder="example@example.com">
+                                      </div>
+                                      <div class="inputBox">
+                                          <span>Cím:</span>
+                                          <input type="text" placeholder="room - street - locality">
+                                      </div>
+                                      <div class="inputBox">
+                                          <span>Lakcím:</span>
+                                          <input type="text" placeholder="mumbai">
+                                      </div>
+                                  </div>
+                      
+                                  <div class="col">
+                      
+                                      <h3 class="title">Fizetési módok:</h3>
+                      
+                                      <div class="inputBox">
+                                          <span>Lehetőségek:</span>
+                                          <img src="./img/card_img.png" alt="">
+                                      </div>
+                                      <div class="inputBox">
+                                          <span>Név::</span>
+                                          <input type="text" placeholder="mr. john deo">
+                                      </div>
+                                      <div class="inputBox">
+                                          <span>Kértyaszám:</span>
+                                          <input type="number" placeholder="1111-2222-3333-4444">
+                                      </div>
+                                      <div class="flex">
+                                          <div class="inputBox">
+                                              <span>Lejárati dátum</span>
+                                              <input type="number" placeholder="2022">
+                                          </div>
+                                          <div class="inputBox">
+                                              <span>CVV :</span>
+                                              <input type="text" placeholder="1234">
+                                          </div>
+                                      </div>
+                      
+                                  </div>
+                          
+                              </div>
+                      
+                              <input type="submit" value="proceed to checkout" class="submit-btn">
+                      
+                          </form>
+                      
+                      </div>    
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <input type="button" value="Cashout">
+                <input type="button" value="Skinshop">
+                <input type="button" value="Tagshop">
+                <a href="info.html">Info<img class="kerek" src="./img/kerek.png"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="stopperId"></div>
+    <div id="jatekter" class="center">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
